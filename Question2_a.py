@@ -75,6 +75,10 @@ def save_data(filename, data):
 salt = os.urandom(16)  # Secure random salt
 key_1 = generate_symmetric_key(16, salt)  # K1 - 128-bit key
 key_2 = generate_symmetric_key(32, salt)  # K2 - 256-bit key
+with open('K1_symmetric_key.pem', 'wb') as f:
+    f.write(str(key_1.hex()).encode())
+with open('K2_symmetric_key.pem', 'wb') as f:
+    f.write(str(key_2.hex()).encode())
 
 # Print symmetric keys
 print("K1 (128-bit):", key_1.hex())

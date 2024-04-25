@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6308fbe2-e9b9-44a9-8f9c-efdf8f54832c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question5_a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question5_b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K1_symmetric_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K2_symmetric_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewKey_HMAC-SHA256.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_128_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_128_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_128_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_128_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_128x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_cbc_25x6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/decrypted_image_ctrx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_cbc_128_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_cbc_128_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_cbc_128_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_cbc_256.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_cbc_256_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/encrypted_image_ctr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q4_materials/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$formationSecurityReport.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/K1_decrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/K1_decrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/K1_encrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/K1_encrypted.txt" afterDir="false" />
@@ -16,7 +32,6 @@
       <change beforePath="$PROJECT_DIR$/K2_encrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/K2_encrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/K2_original.txt" beforeDir="false" afterPath="$PROJECT_DIR$/K2_original.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Question2_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/Question2_a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question2_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/Question2_b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,28 +49,42 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2fVPZZowuv7qnjvj38pqfeV0dEw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.Question2_a.executor": "Run",
+    "Python.Question5_b.executor": "Run",
+    "Python.q3.executor": "Run",
+    "Python.q4.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/yasinsefakirman/Desktop/Son Koşu/Network Security CSE4057/project1/InformationSecurityProject1/q4_materials",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/q4_materials" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/q4_materials" />
       <recent name="C:\Users\faruk.akdemir\PycharmProjects\Security" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Question5_b">
+  <component name="RunManager">
     <configuration name="Question1_a" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -78,6 +107,7 @@
     </configuration>
     <configuration name="Question1_b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -99,6 +129,7 @@
     </configuration>
     <configuration name="Question2_a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -120,6 +151,7 @@
     </configuration>
     <configuration name="Question2_b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -141,6 +173,7 @@
     </configuration>
     <configuration name="Question5_a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -162,6 +195,7 @@
     </configuration>
     <configuration name="Question5_b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Security" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -201,5 +235,8 @@
       <updated>1713883328151</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
