@@ -5,11 +5,24 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.backends import default_backend
 import os
 
-# Generate Elliptic Curve key pairs
-def generate_ec_keys():
-    private_key = ec.generate_private_key(ec.SECP384R1(), default_backend())
-    public_key = private_key.public_key()
-    return private_key, public_key
+# Function to load an elliptic curve private key from a PEM file
+def load_ec_private_key(file_path):
+    with open(file_path, "rb") as key_file:
+        private_key = serialization.load_pem_private_key(
+            key_file.read(),
+            password=None,  # Add password here if your key is encrypted
+            backend=default_backend()
+        )
+    return private_key
+
+# Function to load an elliptic curve public key from a PEM file
+def load_ec_public_key(file_path):
+    with open(file_path, "rb") as key_file:
+        public_key = serialization.load_pem_public_key(
+            key_file.read(),
+            backend=default_backend()
+        )
+    return public_key
 
 # Derive a symmetric key using ECDH
 def derive_symmetric_key(private_key, peer_public_key):
@@ -23,9 +36,11 @@ def derive_symmetric_key(private_key, peer_public_key):
     ).derive(shared_key)
     return derived_key
 
-# Generate key pairs for KB and KC
-private_key_kb, public_key_kb = generate_ec_keys()
-private_key_kc, public_key_kc = generate_ec_keys()
+# Load key pairs for KB and KC from PEM files
+private_key_kb = load_ec_private_key('KB_private_key.pem')
+public_key_kb = load_ec_public_key('KB_public_key.pem')
+private_key_kc = load_ec_private_key('KC_private_key.pem')
+public_key_kc = load_ec_public_key('KC_public_key.pem')
 
 # Derive symmetric keys
 # K3 using KC+ (public key of KC) and KB- (private key of KB)

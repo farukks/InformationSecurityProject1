@@ -7,14 +7,28 @@ from cryptography.hazmat.backends import default_backend
 import os
 
 # Generate RSA key pair for encryption/decryption
-def generate_rsa_keys():
-    private_key = rsa.generate_private_key(
-        public_exponent=65537,
-        key_size=2048,
-        backend=default_backend()
-    )
-    public_key = private_key.public_key()
-    return private_key, public_key
+# Function to load RSA private key from PEM file
+def load_private_key(file_path):
+    with open(file_path, "rb") as key_file:
+        private_key = serialization.load_pem_private_key(
+            key_file.read(),
+            password=None,  # Use password if your key is encrypted
+            backend=default_backend()
+        )
+    return private_key
+
+# Function to load RSA public key from PEM file
+def load_public_key(file_path):
+    with open(file_path, "rb") as key_file:
+        public_key = serialization.load_pem_public_key(
+            key_file.read(),
+            backend=default_backend()
+        )
+    return public_key
+
+# Load existing RSA keys
+private_key_ka = load_private_key('private.pem')
+public_key_ka = load_public_key('public.pem')
 
 # Encrypt message using RSA public key
 def rsa_encrypt(public_key, message):
@@ -56,8 +70,6 @@ def save_data(filename, data):
     with open(filename, "w") as file:
         file.write(data.hex())
 
-# Generate RSA key pair
-private_key_ka, public_key_ka = generate_rsa_keys()
 
 # Generate two symmetric keys
 salt = os.urandom(16)  # Secure random salt
